@@ -442,6 +442,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_speed: 5
+  lassoPrefab: {fileID: 3718731343526408209, guid: 09d3c4cdec72cf34991b5a01495f3905, type: 3}
+  playerPoint: {fileID: 1124557340}
 --- !u!61 &1124557342
 BoxCollider2D:
   m_ObjectHideFlags: 0
