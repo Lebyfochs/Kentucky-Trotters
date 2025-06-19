@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Transform playerPoint;
 
+    public Vector3 clickPosition;
+
     public int lerpFramesCount = 45;
     int elapsedFrames = 0;
 
@@ -70,12 +72,14 @@ public class PlayerMovement : MonoBehaviour
 
             //lassoPrefab.transform.position += new Vector3(ray.origin.x, ray.origin.y) * Time.deltaTime;
 
+            //lassoPrefab.transform.position = Vector3.MoveTowards(playerPoint.position.normalized, ray.origin.normalized, player_speed * Time.deltaTime);
+
 
 
             //Instantiate(lassoPrefab, new Vector3(ray.origin.x, ray.origin.y), Quaternion.identity);
         }
 
         //Debug.DrawRay(transform.position, transform.forward, Color.cyan);
-
+        Debug.Log(playerPoint.position);
     }
 }
